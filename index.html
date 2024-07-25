@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Template Designer</title>
+    <link href="/src/style.css" rel="stylesheet" />
+</head>
+<body>
+<div id="tools">
+    <div class="tool-field">
+        <label for="upload">Upload Template</label>
+        <input type="file" id="upload" accept="application/JSON" />
+    </div>
+
+    <div class="tool-field">
+        <label for="download">Download Template</label>
+        <button type="button" id="download">Save template as...</button>
+    </div>
+
+    <div class="tool-field">
+        <label for="save">Save changes</label>
+        <button type="button" id="save">Save template</button>
+    </div>
+
+    <div class="tool-field">
+        <label for="autosave">Autosave changes</label>
+        <input type="checkbox" id="autosave" />
+    </div>
+
+    <div class="tool-field">
+        <label for="generate">Generate PDF</label>
+        <button type="button" id="generate">Generate</button>
+    </div>
+
+</div>
+<div id="designer"></div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
