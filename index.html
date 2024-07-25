@@ -4,18 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Template Designer</title>
-    <link href="/src/style.css" rel="stylesheet" />
+    <link href="/src/style.css" rel="stylesheet"/>
 </head>
 <body>
 <div id="tools">
     <div class="tool-field">
-        <label for="upload">Upload Template</label>
-        <input type="file" id="upload" accept="application/JSON" />
+        <label for="upload">Choose Template</label>
+        <input type="file" id="upload" accept="application/JSON"/>
     </div>
 
     <div class="tool-field">
-        <label for="download">Download Template</label>
-        <button type="button" id="download">Save template as...</button>
+        <label for="autosave">Autosave changes</label>
+        <input type="checkbox" id="autosave"/>
+    </div>
+
+    <div class="tool-field">
+        <label for="generate">Template paddings</label>
+        <div class="paddings-inputs">
+            <div>
+                <label for="padding-top">Top:</label>
+                <input id="padding-top" type="number"/>
+            </div>
+
+            <div>
+                <label for="padding-bottom">Bottom:</label>
+                <input id="padding-bottom" type="number"/>
+            </div>
+
+            <div>
+                <label for="padding-left">Left:</label>
+                <input id="padding-left" type="number"/>
+            </div>
+
+            <div>
+                <label for="padding-right">Right:</label>
+                <input id="padding-right" type="number"/>
+            </div>
+        </div>
     </div>
 
     <div class="tool-field">
@@ -24,15 +49,14 @@
     </div>
 
     <div class="tool-field">
-        <label for="autosave">Autosave changes</label>
-        <input type="checkbox" id="autosave" />
+        <label for="download">Download Template</label>
+        <button type="button" id="download">Save template as...</button>
     </div>
 
     <div class="tool-field">
         <label for="generate">Generate PDF</label>
         <button type="button" id="generate">Generate</button>
     </div>
-
 </div>
 <div id="designer"></div>
 <script type="module" src="/src/main.ts"></script>

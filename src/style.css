@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'HelveticaNowText';
+  src: url('/fonts/HelveticaNowText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowText';
+  src: url('/fonts/HelveticaNowText-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 :root {
   font-family: sans-serif;
   font-size: 13px;
@@ -29,7 +43,6 @@ html * {
   border-bottom: 1px solid gray;
   display: flex;
   align-items: center;
-  gap: 25px;
 }
 
 .tool-field {
@@ -39,6 +52,32 @@ html * {
   align-items: flex-start;
 }
 
+.tool-field {
+  padding: 0 25px;
+}
+
+.tool-field:first-child {
+  padding-left: 0;
+}
+
+.tool-field:not(:last-child) {
+  border-right: 1px solid gray;
+}
+
 .tool-field label {
   font-weight: bold;
+}
+
+.paddings-inputs {
+  display: flex;
+  gap: 15px;
+}
+
+.paddings-inputs input[type=number] {
+  max-width: 50px;
+  margin-left: 5px;
+}
+
+.paddings-inputs label {
+  font-weight: normal;
 }

@@ -25,6 +25,10 @@ const downloadButton = document.getElementById("download") as HTMLButtonElement;
 const saveButton = document.getElementById("save") as HTMLButtonElement;
 const autosaveInput = document.getElementById("autosave") as HTMLInputElement;
 const generateButton = document.getElementById("generate") as HTMLButtonElement;
+const paddintTopInput = document.getElementById("padding-top") as HTMLInputElement;
+const paddintBotInput = document.getElementById("padding-bottom") as HTMLInputElement;
+const paddintLeftInput = document.getElementById("padding-left") as HTMLInputElement;
+const paddintRightInput = document.getElementById("padding-right") as HTMLInputElement;
 
 const plugins = {
     text,
@@ -73,6 +77,10 @@ loadFonts().then(font => {
             return JSON.stringify(designer.getTemplate(), null, 2);
         }
 
+        function getTemplateJSON() {
+            return JSON.parse(getTemplateJSONString());
+        }
+
         if (uploadInput) {
             uploadInput.addEventListener("change", (event: Event) => {
                 const target = event.target as HTMLInputElement;
@@ -83,7 +91,6 @@ loadFonts().then(font => {
                         if (e.target && e.target.result) {
                             try {
                                 const json = JSON.parse(e.target.result as string);
-                                console.log(json);
                                 designer.updateTemplate(json as Template);
                             } catch (error) {
                                 console.error("JSON Parsing Error:", error);
@@ -116,7 +123,6 @@ loadFonts().then(font => {
                         const writableStream = await handle.createWritable();
                         await writableStream.write(json);
                         await writableStream.close();
-                        console.log('File saved successfully.');
                     } else {
                         const blob = new Blob([json], {type: "application/json"});
                         const url = URL.createObjectURL(blob);
@@ -157,16 +163,12 @@ loadFonts().then(font => {
                         const inputs: { [key: string]: string } = {};
                         for (const [key, value] of Object.entries(schemas)) {
                             const el = value as { type: string, content: string };
-                            console.log(el.type);
                             switch (el.type) {
                                 case "text":
                                     inputs[key] = el.content;
                                     break;
                             }
                         }
-
-                        console.log("inputs:", inputs);
-
 
                         const pdf = await generate({
                             template: templateJSON,
@@ -185,11 +187,32 @@ loadFonts().then(font => {
             );
         }
 
-        designer.onChangeTemplate((template) => {
+        if (paddintTopInput && paddintBotInput && paddintLeftInput && paddintRightInput) {
+            const paddings = (template.basePdf as { padding: [number, number, number, number] }).padding;
+            const inputs = [paddintTopInput, paddintRightInput, paddintBotInput, paddintLeftInput];
+            if (paddings) {
+                inputs.forEach((input, i) => {
+                    input.value = paddings[i].toString();
+                })
+            } else {
+                inputs.forEach(input => input.value = "0");
+            }
+
+            inputs.forEach((input, i) => {
+                input.min = "0";
+                input.addEventListener("change", (event: Event) => {
+                    const value = (event.target as HTMLInputElement).value;
+                    const template = getTemplateJSON();
+                    template.basePdf.padding[i] = parseFloat(value);
+                    designer.updateTemplate(template);
+                });
+            });
+        }
+
+        designer.onChangeTemplate(() => {
             if (autosaveInput.checked) {
                 saveTemplate();
             }
-            console.log(template);
         });
 
     }
