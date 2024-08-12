@@ -1,0 +1,705 @@
+{
+  "schemas": [
+    {
+      "invoice": {
+        "type": "readOnlyText",
+        "position": {
+          "x": 95,
+          "y": 20
+        },
+        "content": "INVOICE",
+        "width": 95,
+        "height": 15.8,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 28,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      },
+      "lunu_addr_title": {
+        "type": "readOnlyText",
+        "position": {
+          "x": 20,
+          "y": 39
+        },
+        "content": "UAB Lunu Europe",
+        "width": 84.69,
+        "height": 6.51,
+        "rotate": 0,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "fontSize": 11,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowTextBold"
+      },
+      "invoice_number": {
+        "type": "text",
+        "position": {
+          "x": 133,
+          "y": 37
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-text-cursor-input\"><path d=\"M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1\"/><path d=\"M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5\"/><path d=\"M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1\"/><path d=\"M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7\"/><path d=\"M9 7v10\"/></svg>",
+        "content": "Invoice# 202304-6",
+        "width": 57,
+        "height": 7,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 11,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "fontName": "HelveticaNowTextBold",
+        "backgroundColor": "",
+        "opacity": 1
+      },
+      "lunu_addr": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Gedimino pr. 44A-201\nVilnius Vilniaus Apskritis 01400\nLithuania\n",
+        "position": {
+          "x": 20,
+          "y": 44
+        },
+        "width": 89,
+        "height": 18.46,
+        "rotate": 0,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1.5,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      },
+      "balance_due_label": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Balance Due",
+        "position": {
+          "x": 145,
+          "y": 46
+        },
+        "width": 45,
+        "height": 5,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 9,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowTextBold"
+      },
+      "balance": {
+        "type": "text",
+        "position": {
+          "x": 112,
+          "y": 51
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-text-cursor-input\"><path d=\"M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1\"/><path d=\"M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5\"/><path d=\"M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1\"/><path d=\"M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7\"/><path d=\"M9 7v10\"/></svg>",
+        "content": "€0,00",
+        "width": 78,
+        "height": 8,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 13,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "fontName": "HelveticaNowTextBold"
+      },
+      "bill_to": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Bill To",
+        "position": {
+          "x": 20,
+          "y": 72
+        },
+        "width": 45,
+        "height": 7,
+        "rotate": 0,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "fontSize": 12,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      },
+      "retailer_name": {
+        "type": "text",
+        "position": {
+          "x": 20,
+          "y": 79
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-text-cursor-input\"><path d=\"M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1\"/><path d=\"M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5\"/><path d=\"M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1\"/><path d=\"M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7\"/><path d=\"M9 7v10\"/></svg>",
+        "content": "Hubert Blaine Wolfeschlegelsteinhausenbergerdorff",
+        "width": 95,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1.5,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "fontName": "HelveticaNowTextBold"
+      },
+      "retailer_address": {
+        "type": "text",
+        "position": {
+          "x": 20,
+          "y": 84
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-text-cursor-input\"><path d=\"M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1\"/><path d=\"M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5\"/><path d=\"M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1\"/><path d=\"M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7\"/><path d=\"M9 7v10\"/></svg>",
+        "content": "Patrikiou Loumoumpa 7\nPervolia\n7560 Larnaca\nAlgeria\n",
+        "width": 95,
+        "height": 25,
+        "rotate": 0,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1.5,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "fontName": "HelveticaNowText"
+      },
+      "logo": {
+        "type": "readOnlySvg",
+        "position": {
+          "x": 20,
+          "y": 23
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route-off\"><circle cx=\"6\" cy=\"19\" r=\"3\"/><path d=\"M9 19h8.5c.4 0 .9-.1 1.3-.2\"/><path d=\"M5.2 5.2A3.5 3.53 0 0 0 6.5 12H12\"/><path d=\"m2 2 20 20\"/><path d=\"M21 15.3a3.5 3.5 0 0 0-3.3-3.3\"/><path d=\"M15 5h-4.3\"/><circle cx=\"18\" cy=\"5\" r=\"3\"/></svg>",
+        "content": "<svg viewBox=\"0 0 57 12\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"black\">\n    <path d=\"M22.4555 0.971769C22.4647 0.88437 22.4558 0.795968 22.4294 0.712314C22.403 0.628661 22.3597 0.551628 22.3023 0.486228C22.2449 0.420827 22.1747 0.368524 22.0963 0.332719C22.0178 0.296914 21.9329 0.278409 21.847 0.278409C21.7611 0.278409 21.6761 0.296914 21.5977 0.332719C21.5192 0.368524 21.449 0.420827 21.3916 0.486228C21.3342 0.551628 21.2909 0.628661 21.2645 0.712314C21.2381 0.795968 21.2292 0.88437 21.2384 0.971769V5.26474C21.2384 8.24991 19.4281 9.82408 17.1488 9.82408C14.8694 9.82408 13.0614 8.24991 13.0614 5.26474V0.986167C13.0735 0.897141 13.0668 0.806494 13.0418 0.720339C13.0168 0.634183 12.974 0.554522 12.9163 0.486726C12.8586 0.418931 12.7874 0.364578 12.7075 0.327332C12.6275 0.290086 12.5407 0.270813 12.4529 0.270813C12.3651 0.270813 12.2782 0.290086 12.1983 0.327332C12.1184 0.364578 12.0472 0.418931 11.9895 0.486726C11.9318 0.554522 11.889 0.634183 11.864 0.720339C11.8389 0.806494 11.8323 0.897141 11.8444 0.986167V5.20475C11.8444 9.0274 14.2245 10.9999 17.1488 10.9999C20.073 10.9999 22.4555 9.0274 22.4555 5.20475V0.974168V0.971769Z\" />\n    <path d=\"M5.52717 9.78118H5.28095C3.01333 9.78118 1.21706 7.88066 1.21706 5.23624V0.897674C1.20744 0.739203 1.13914 0.590446 1.02608 0.48171C0.913012 0.372974 0.763689 0.312439 0.608528 0.312439C0.453368 0.312439 0.304045 0.372974 0.190981 0.48171C0.0779164 0.590446 0.009618 0.739203 0 0.897674L0 5.17625C0 8.70374 2.345 10.9354 5.23874 10.9714H5.52717C5.99617 10.9714 6.21426 10.705 6.21426 10.3763C6.21426 10.0475 6.00086 9.78118 5.52717 9.78118Z\" />\n    <path d=\"M29.1271 10.0281C29.1163 10.1162 29.1241 10.2057 29.1497 10.2905C29.1753 10.3753 29.2182 10.4536 29.2757 10.5201C29.3331 10.5867 29.4037 10.64 29.4828 10.6765C29.5619 10.713 29.6477 10.7318 29.7344 10.7318C29.8212 10.7318 29.9069 10.713 29.986 10.6765C30.0651 10.64 30.1357 10.5867 30.1932 10.5201C30.2506 10.4536 30.2935 10.3753 30.3192 10.2905C30.3448 10.2057 30.3525 10.1162 30.3418 10.0281V5.73757C30.3441 2.75 32.1521 1.19983 34.4315 1.19983C36.7108 1.19983 38.5212 2.7596 38.5212 5.75916V10.0137C38.509 10.1028 38.5157 10.1934 38.5408 10.2796C38.5658 10.3657 38.6086 10.4454 38.6663 10.5132C38.7239 10.581 38.7951 10.6353 38.8751 10.6726C38.955 10.7098 39.0418 10.7291 39.1297 10.7291C39.2175 10.7291 39.3043 10.7098 39.3843 10.6726C39.4642 10.6353 39.5354 10.581 39.5931 10.5132C39.6508 10.4454 39.6936 10.3657 39.7186 10.2796C39.7436 10.1934 39.7503 10.1028 39.7382 10.0137V5.79756C39.7382 1.97251 37.358 0 34.4315 0C31.5049 0 29.1271 1.97251 29.1271 5.79756V10.0257V10.0281Z\" />\n    <path d=\"M57.0002 0.971823C57.0109 0.883722 57.0032 0.794295 56.9776 0.709474C56.952 0.624652 56.909 0.546374 56.8516 0.479831C56.7942 0.413288 56.7235 0.36 56.6445 0.323501C56.5654 0.287003 56.4796 0.268127 56.3928 0.268127C56.3061 0.268127 56.2203 0.287003 56.1412 0.323501C56.0621 0.36 55.9915 0.413288 55.9341 0.479831C55.8767 0.546374 55.8337 0.624652 55.8081 0.709474C55.7825 0.794295 55.7748 0.883722 55.7855 0.971823V5.2648C55.7855 8.24996 53.9751 9.82413 51.6982 9.82413C49.4212 9.82413 47.6038 8.24996 47.6038 5.2648V0.986221C47.6159 0.897195 47.6092 0.806548 47.5842 0.720392C47.5591 0.634237 47.5163 0.554576 47.4587 0.48678C47.401 0.418985 47.3298 0.364631 47.2498 0.327386C47.1699 0.29014 47.0831 0.270867 46.9952 0.270867C46.9074 0.270867 46.8206 0.29014 46.7407 0.327386C46.6607 0.364631 46.5895 0.418985 46.5318 0.48678C46.4742 0.554576 46.4314 0.634237 46.4063 0.720392C46.3813 0.806548 46.3746 0.897195 46.3867 0.986221V5.20481C46.3867 9.02745 48.7669 11 51.6935 11C54.62 11 56.9979 9.02745 56.9979 5.20481V0.974222L57.0002 0.971823Z\" />\n</svg>",
+        "width": 60.35,
+        "height": 12.2,
+        "readOnly": true
+      },
+      "invoice_date": {
+        "type": "text",
+        "position": {
+          "x": 155,
+          "y": 79
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-text-cursor-input\"><path d=\"M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1\"/><path d=\"M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5\"/><path d=\"M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1\"/><path d=\"M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7\"/><path d=\"M9 7v10\"/></svg>",
+        "content": "30 September 2023",
+        "width": 35,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "fontName": "HelveticaNowText"
+      },
+      "custom": {
+        "type": "readOnlyText",
+        "position": {
+          "x": 155,
+          "y": 88
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Custom",
+        "width": 35,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      },
+      "invoice_date2": {
+        "type": "text",
+        "position": {
+          "x": 155,
+          "y": 97
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-text-cursor-input\"><path d=\"M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1\"/><path d=\"M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5\"/><path d=\"M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1\"/><path d=\"M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7\"/><path d=\"M9 7v10\"/></svg>",
+        "content": "30 September 2023",
+        "width": 35,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "fontName": "HelveticaNowText"
+      },
+      "invoice_date_label": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Invoice Date:",
+        "position": {
+          "x": 115,
+          "y": 78.5
+        },
+        "width": 28,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 12,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      },
+      "terms": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Terms:",
+        "position": {
+          "x": 115,
+          "y": 87.5
+        },
+        "width": 28,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 12,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      },
+      "due_date": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Due Date:",
+        "position": {
+          "x": 115,
+          "y": 96.5
+        },
+        "width": 28,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 12,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      },
+      "orders": {
+        "type": "table",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-table\"><path d=\"M12 3v18\"/><rect width=\"18\" height=\"18\" x=\"3\" y=\"3\" rx=\"2\"/><path d=\"M3 9h18\"/><path d=\"M3 15h18\"/></svg>",
+        "position": {
+          "x": 20,
+          "y": 119
+        },
+        "width": 170,
+        "height": 23.584000000000003,
+        "content": "[[\"1\",\"Item#1\",\"0,00\",\"0,00\",\"0,00\"],[\"2\",\"Item#2\",\"0,00\",\"0,00\",\"0,00\"]]",
+        "showHead": true,
+        "head": [
+          "#",
+          "Item & Description",
+          "Qty",
+          "Rate",
+          "Amount"
+        ],
+        "headWidthPercentages": [
+          5.698529411764708,
+          53.345588235294116,
+          11.323529411764707,
+          14.632352941176467,
+          15.000000000000004
+        ],
+        "tableStyles": {
+          "borderWidth": 0,
+          "borderColor": "#000000"
+        },
+        "headStyles": {
+          "fontName": "HelveticaNowText",
+          "fontSize": 10,
+          "characterSpacing": 0,
+          "alignment": "center",
+          "verticalAlignment": "middle",
+          "lineHeight": 1,
+          "fontColor": "#ffffff",
+          "borderColor": "#3b3d39",
+          "backgroundColor": "#3b3d39",
+          "borderWidth": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "padding": {
+            "top": 2,
+            "right": 2,
+            "bottom": 3,
+            "left": 2
+          }
+        },
+        "bodyStyles": {
+          "fontName": "HelveticaNowText",
+          "fontSize": 10,
+          "characterSpacing": 0,
+          "alignment": "left",
+          "verticalAlignment": "middle",
+          "lineHeight": 1,
+          "fontColor": "#000000",
+          "borderColor": "#ffffff",
+          "backgroundColor": "",
+          "alternateBackgroundColor": "#ffffff",
+          "borderWidth": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "padding": {
+            "top": 2,
+            "right": 2,
+            "bottom": 2,
+            "left": 2
+          }
+        },
+        "columnStyles": {
+          "alignment": {
+            "0": "center",
+            "1": "left",
+            "2": "right",
+            "3": "right",
+            "4": "right"
+          }
+        }
+      },
+      "sub_total": {
+        "type": "text",
+        "position": {
+          "x": 153,
+          "y": 160
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-text-cursor-input\"><path d=\"M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1\"/><path d=\"M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5\"/><path d=\"M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1\"/><path d=\"M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7\"/><path d=\"M9 7v10\"/></svg>",
+        "content": "0,00",
+        "width": 35,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "fontName": "HelveticaNowText"
+      },
+      "period_line": {
+        "type": "line",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-minus\"><path d=\"M5 12h14\"/></svg>",
+        "position": {
+          "x": 20,
+          "y": 157.31
+        },
+        "width": 170,
+        "height": 0.2,
+        "rotate": 0,
+        "opacity": 1,
+        "readOnly": true,
+        "color": "#c1c1c1"
+      },
+      "period": {
+        "type": "text",
+        "position": {
+          "x": 31,
+          "y": 150
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-text-cursor-input\"><path d=\"M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1\"/><path d=\"M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5\"/><path d=\"M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1\"/><path d=\"M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7\"/><path d=\"M9 7v10\"/></svg>",
+        "content": "30 September 2023",
+        "width": 147,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#747474",
+        "backgroundColor": "",
+        "opacity": 1,
+        "fontName": "HelveticaNowText"
+      },
+      "sub_total_label": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Sub Total",
+        "position": {
+          "x": 115,
+          "y": 160
+        },
+        "width": 28,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      },
+      "total_label": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Total",
+        "position": {
+          "x": 115,
+          "y": 170
+        },
+        "width": 28,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowTextBold"
+      },
+      "total": {
+        "type": "text",
+        "position": {
+          "x": 153,
+          "y": 170
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-text-cursor-input\"><path d=\"M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1\"/><path d=\"M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5\"/><path d=\"M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1\"/><path d=\"M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7\"/><path d=\"M9 7v10\"/></svg>",
+        "content": "0,00\n",
+        "width": 35,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "fontName": "HelveticaNowText"
+      },
+      "balance_due_bg": {
+        "type": "rectangle",
+        "position": {
+          "x": 100,
+          "y": 177
+        },
+        "width": 90,
+        "height": 12,
+        "rotate": 0,
+        "opacity": 1,
+        "borderWidth": 1,
+        "borderColor": "#f4f3f2",
+        "color": "#f4f3f2",
+        "readOnly": true,
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-square\"><rect width=\"18\" height=\"18\" x=\"3\" y=\"3\" rx=\"2\"/></svg>"
+      },
+      "balance_due": {
+        "type": "text",
+        "position": {
+          "x": 153,
+          "y": 180
+        },
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-text-cursor-input\"><path d=\"M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1\"/><path d=\"M13 20h-1a3 3 0 0 1-3-3 3 3 0 0 1-3 3H5\"/><path d=\"M5 16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1\"/><path d=\"M13 8h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7\"/><path d=\"M9 7v10\"/></svg>",
+        "content": "0,00",
+        "width": 35,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "fontName": "HelveticaNowTextBold"
+      },
+      "balance_due_label2": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Balance Due",
+        "position": {
+          "x": 115,
+          "y": 180
+        },
+        "width": 28,
+        "height": 6,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowTextBold"
+      },
+      "notes": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Notes",
+        "position": {
+          "x": 20,
+          "y": 215
+        },
+        "width": 170,
+        "height": 7,
+        "rotate": 0,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      },
+      "notes_text": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Beneficiary: Lunu Europe UAB\nBank: Modulr Finance B.V.\nBank address: 165C Weteringschans 1017 XD, Amsterdam, Netherlands\nIBAN: IE92MODR99035501916637\nBIC: MODRIE22XXX\n\nThanks for your business!",
+        "position": {
+          "x": 20,
+          "y": 223
+        },
+        "width": 170,
+        "height": 10,
+        "rotate": 0,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "fontSize": 8,
+        "lineHeight": 1.5,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      },
+      "terms_cond": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Terms & Conditions",
+        "position": {
+          "x": 20,
+          "y": 259
+        },
+        "width": 170,
+        "height": 7,
+        "rotate": 0,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "fontSize": 10,
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      },
+      "terms_cond_text": {
+        "type": "readOnlyText",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-type\"><polyline points=\"4 7 4 4 20 4 20 7\"/><line x1=\"9\" x2=\"15\" y1=\"20\" y2=\"20\"/><line x1=\"12\" x2=\"12\" y1=\"4\" y2=\"20\"/></svg>",
+        "content": "Invoice to be paid in full without any deductions, stating the invoice number in the payment reference.",
+        "position": {
+          "x": 20,
+          "y": 267
+        },
+        "width": 170,
+        "height": 10,
+        "rotate": 0,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "fontSize": 8,
+        "lineHeight": 1.5,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "backgroundColor": "",
+        "opacity": 1,
+        "readOnly": true,
+        "fontName": "HelveticaNowText"
+      }
+    }
+  ],
+  "basePdf": {
+    "width": 210,
+    "height": 297,
+    "padding": [
+      20,
+      20,
+      20,
+      20
+    ]
+  },
+  "pdfmeVersion": "4.0.0"
+}
