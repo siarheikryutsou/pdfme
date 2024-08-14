@@ -221,6 +221,7 @@ loadFonts().then(font => {
                             setFooterPositions(277 - (21 * (PAGE_1_TABLE_ROWS_MAX - 1)), footerElements);
 
                             const pagesLength = Math.ceil(tableData.length / PAGE_2_TABLE_ROWS_MAX);
+
                             for(let pageI = 1; pageI < pagesLength + 1; pageI++) {
                                 const nextTableData = tableData.splice(0, PAGE_2_TABLE_ROWS_MAX);
                                 const pageN = pageI + 1;
@@ -235,7 +236,14 @@ loadFonts().then(font => {
                                     const copy = copyOBJ(el);
                                     templateJSON.schemas[pageI][`page_${pageN}_footer_el_${(i + 1)}`] = copy;
                                     return copy;
-                                })
+                                });
+
+                                new Array(115-28).fill({}).map((_, i) => {
+                                    const hr = copyOBJ(schema['field' + (28 + i)]);
+                                    hr.position.y = 90;
+                                    templateJSON.schemas[pageI][`page_${pageN}_table_hr_${(i + 1)}`] = hr;
+                                    return hr;
+                                });
 
                                 inputs[`page_${pageN}_header_el_${nextHeaderElements.length}`] = JSON.stringify(nextTableData);
                                 inputs[`page_${pageN}_header_el_7`] = schema.period.content;
